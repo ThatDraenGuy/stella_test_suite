@@ -1,6 +1,6 @@
 language core;
-
+extend with #lists;
 
 fn main(n : Nat) -> Nat {
-  return if n(true) then succ(0) else 0
+  return if List::isempty(n) then succ(0) else 0
 }
